@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🤖 AI Chatbot</h1>
+        <p>Powered by Hugging Face AI</p>
+    </div>
+
+    <div id="chat-box">
+        <div class="bot">
+            👋 Hello! I'm your AI assistant. Ask me anything.
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button class="send-btn" onclick="sendMessage()">➤</button>
+        <button id="mic-btn" onclick="startListening()">🎤</button>
+    </div>
+<script src="{{url_for('static',filename='script.js')}}"></script>
+</div>
+</body>
+</html>
