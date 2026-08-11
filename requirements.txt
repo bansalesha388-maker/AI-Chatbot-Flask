@@ -1,2 +1,5 @@
 Flask
 gunicorn
+python-dotenv
+openai
+huggingface_hub
